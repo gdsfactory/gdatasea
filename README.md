@@ -9,7 +9,8 @@ An open source data storage solution for chip designs and their corresponding co
     pip install -e .
     ```
 
-    > Installs `pygraphviz` to render the database schema. Please install necessary dependencies by following [this](https://pygraphviz.github.io/documentation/stable/install.html) tutorial.
+> [!NOTE]
+> Installs `pygraphviz` to render the database schema. Please install necessary dependencies by following [this](https://pygraphviz.github.io/documentation/stable/install.html) tutorial.
 
 
 2. Initialize the database
