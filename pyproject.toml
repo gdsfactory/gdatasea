@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=60", "wheel", "build", "setuptools_scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdatasea"
+description = "Database solution for storing measurements and analysis for chip designs"
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.11"
+
+
+version = "0.0.1"
+authors = [
+    {name = "gdsfactory community", email = "contact@gdsfactory.com"},
+]
+dependencies = [
+  "sqlmodel",
+  "sqlalchemy>2"
+]
+
+[project.scripts]
+rebuild_db = "gdatasea.database:create_db_and_tables"
